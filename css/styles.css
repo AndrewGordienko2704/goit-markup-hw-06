@@ -439,12 +439,17 @@ border: 1px solid var(--accent-color);
 
 
 .basement {
+    display: flex;
+    justify-content: space-between;
 background-color: var(--dark-background-color);
 padding: 60px 0;
     }
+
+
 .part-logo {
     color: var(--background-color);
 }
+
 .contacts .adres {
     color: var(--background-color);
     font-weight: 500;
@@ -517,6 +522,46 @@ padding: 60px 0;
         height: 20px;
         fill: var(--background-color);
     }
+
+    .footer-box-form {
+       
+        
+    }
+
+    .footer-form-btn {
+        
+    }
+
+
+    .footer-form {
+
+    }
+
+    .footer-form-field {
+        
+
+    
+    }
+
+    .footer-form-title {
+        
+
+    }
+
+    .footer-form-input {
+     
+    }
+
+    .footer-form-submit {
+    
+    }
+
+    .footer-form-input-icon {
+        
+
+    }
+
+
 
 
     /* стилізація сторінки портфоліо */
@@ -676,7 +721,14 @@ padding: 60px 0;
 .modal-close-icon {
    width: 18px;
    height: 18px; 
+   fill: var(--title-text-color);
+   transition: fill var(--transition-dur-and-func);
 }
+.modal-close-icon:focus,
+.modal-close-icon:hover {
+ fill: var(--accent-color);
+}
+
 
 /* стилізація модальної форми */
 
@@ -736,22 +788,89 @@ padding: 60px 0;
     transition: fill var(--transition-dur-and-func);
 }
 
-.modal-form-input:focus,
-.modal-form-input:hover {
+.modal-form-input:focus
+ {
     border-color: var(--accent-color);
+    outline: none;
 }
 
-.modal-form-input:focus + .modal-form-input-icon,
-.modal-form-input:hover + .modal-form-input-icon {
+.modal-form-input:focus + .modal-form-input-icon
+ {
 fill: var(--accent-color);
 }
 
  
-
-
-
 .modal-form-massage {
     width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    transition: border-color var(--transition-dur-and-func);
+    
 }
 
+.modal-form-massage::placeholder {
+    text-transform: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-massage:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-check {
+    appearance: none;
+}
+
+
+.modal-form-own-checkbox {
+display: inline-block;
+width: 16px;
+height: 15px;
+}
+
+.modal-form-check:checked + .modal-form-own-checkbox {
+background-color: var(--accent-color);
+background-image: url('/images/check.svg');
+background-size: contain;
+border-color: var(--accent-color);
+fill: var(--accent-color);
+border-radius: 2px;
+}
+
+.modal-form-own-checkbox {
+    fill: currentColor;
+    transition: fill var(--transition-dur-and-func);
+}
+
+.terms-contract {
+    color: var(--accent-color);
+}
+
+
+
+.modal-form-submit {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+    min-width: 216px;
+    align-self: center;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 32px;
+    border: none;
+}
+ 
+.modal-form-submit:focus {
+    color: var(--background-color);
+}
 

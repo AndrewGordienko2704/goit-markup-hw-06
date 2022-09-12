@@ -378,8 +378,23 @@
                 </ul>
             </div>
         </div>
+        <div class="footer-box-form">
+            <form class="footer-form">
+                <label class="footer-form-field">
+                    <span class="footer-form-title">Підпишіться на розсилку</span>
+                    <span class="footer-form-btn">
+                        <input type="email" name="email" class="footer-form-input" placeholder="E-mail" required>
+                        <button type="submit" class="footer-form-submit">ПІдписатись
+                            <svg aria-label="іконка повідомлення" class="footer-form-input-icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </span>
+                </label>
+            </form>
+        </div>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn">
                 <svg class="modal-close-icon" data-modal-close>
@@ -422,7 +437,10 @@
                 </label>
                 <label class="modal-form-check-field">
                     <input type="checkbox" class="modal-form-check" name="user-policy" required>
-                    Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                    <svg class="modal-form-own-checkbox">
+                        <use href="./images/icons.svg#icon-vector"></use>
+                    </svg>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="terms-contract">Умови договору</a>
                 </label>
                 <button type="submit" class="modal-form-submit">Відправити</button>
             </form>
